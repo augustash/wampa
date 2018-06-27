@@ -86,10 +86,6 @@ body {
           clear: both;
         }
 
-        .block-new-customer {
-          margin-top: $global-margin * 3;
-        }
-
         .block-content {
           padding-bottom: $global-padding * 2;
 
@@ -136,6 +132,30 @@ body {
             color: $primary-color;
           }
         }
+      }
+    }
+  }
+}
+
+// New Customer Modal
+.modal-popup.popup-authentication {
+
+  &._show {
+
+    .block-authentication {
+      padding: 0 ($global-padding * 2);
+
+      .block-title {
+        font-size: rem-calc(24);
+        color: $black;
+      }
+
+      p {
+        margin-bottom: $global-margin / 2;
+      }
+
+      .fieldset.login {
+        padding: 0;
       }
     }
   }
