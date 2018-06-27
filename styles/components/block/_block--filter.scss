@@ -2,7 +2,6 @@
 .block.filter {
 
   .block-title {
-    @extend %button;
     @include button($outline: true);
     position: absolute;
     top: 0;
