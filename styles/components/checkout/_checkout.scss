@@ -109,6 +109,45 @@
       padding-bottom: $global-padding;
       margin-bottom: $global-margin;
 
+      // Collapsed field.
+      &:not(._active) {
+
+        > .payment-method-title {
+          position: relative;
+
+          > .label {
+            @include icon($position: after, $icon: chevron-right) {
+              position: absolute;
+              top: 0;
+              right: 0;
+              font-weight: bold;
+            };
+          }
+        }
+
+        > .payment-method-content {
+          display: none;
+        }
+      }
+
+      // Open field.
+      &._active {
+
+        > .payment-method-title {
+          position: relative;
+          margin-bottom: $global-margin;
+
+          > .label {
+            @include icon($position: after, $icon: chevron-down) {
+              position: absolute;
+              top: 0;
+              right: 0;
+              font-weight: bold;
+            };
+          }
+        }
+      }
+
       ul {
         list-style: none;
 
