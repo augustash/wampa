@@ -11,10 +11,44 @@ button,
   .primary,
   .secondary {
     display: inline;
+  }
+
+  .primary {
 
     // Add button styles to primary or secondary links to match buttons of primary links.
     a {
       @include button;
+    }
+  }
+
+  .secondary {
+
+    a,
+    .action.back {
+      @include button($outline: true);
+    }
+  }
+}
+
+// Disabled checkout buttons on hover
+// show "tip" to alert customer to select payment option
+.action.checkout {
+
+  &:disabled {
+
+    &:hover {
+      position: relative;
+      cursor: not-allowed;
+
+      &:before {
+        content: 'Please select a payment option';
+        color: $grey;
+        background-color: $white;
+        position: absolute;
+        right: 0;
+        bottom: $global-padding * -2;
+        padding: ($global-padding / 10) ($global-padding);
+      }
     }
   }
 }
