@@ -5,7 +5,7 @@
   display: none;
 }
 
-//Custom modal overlay - used on checkout pages
+// Custom modal overlay - used on checkout pages
 body {
 
   &._has-modal-custom {
@@ -37,9 +37,111 @@ body {
       }
     }
   }
+
+  &._has-modal {
+
+    .modals-wrapper {
+      display: block;
+    }
+
+    .modal-popup {
+      display: none;
+    }
+
+    .modal-popup._show {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 15 !important;
+      background-color: rgba($black, 0.6);
+
+      .modal-inner-wrap {
+        width: 90%;
+        margin: 0 auto ($global-margin * 14);
+        position: relative;
+        top: $global-padding * 6;
+        background-color: $white;
+        border-radius: $global-radius;
+        box-shadow: 0 15px 40px $grey-shadow-transparent;
+        z-index: 100;
+
+        @include breakpoint(medium) {
+          width: 50%;
+        }
+
+        .modal-content {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+
+        .modal-footer {
+          float: none;
+          box-shadow: none;
+          margin-top: $global-margin;
+          padding-top: $global-padding;
+          border-radius: $global-radius;
+          clear: both;
+        }
+
+        .block-new-customer {
+          margin-top: $global-margin * 3;
+        }
+
+        .block-content {
+          padding-bottom: $global-padding * 2;
+
+          .actions-toolbar {
+
+            .primary {
+              display: inline;
+            }
+
+            div.secondary {
+              float: right;
+            }
+          }
+        }
+      }
+
+      .modal-header {
+        text-align: left;
+        padding: ($global-padding * 2) $global-padding 0;
+        margin-bottom: $global-margin;
+
+        h1 {
+          font-size: $global-font-size * 1.5;
+        }
+
+        .action-close {
+          @include icon($position: after, $icon: close) {
+            margin: $global-margin / 2;
+          };
+          position: absolute;
+          top: 0;
+          right: 0;
+          float: right;
+          background: transparent;
+          border: none;
+          color: $grey;
+          font-size: $global-font-size * 1.7;
+
+          span {
+            display: none;
+          }
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
 }
 
-//Modal content when open
+// Modal content when open
 .modal-inner-wrap {
 
   .modal-header {
