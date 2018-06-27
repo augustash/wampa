@@ -2,8 +2,7 @@
 button,
 [type=submit],
 [type=button] {
-  @extend %button;
-  @include button-style;
+  @include button;
 }
 
 // Toolbar links to display inline-block
@@ -15,8 +14,7 @@ button,
 
     // Add button styles to primary or secondary links to match buttons of primary links.
     a {
-      @extend %button;
-      @include button-style;
+      @include button;
     }
   }
 }

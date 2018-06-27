@@ -54,8 +54,7 @@
   }
 
   .continue {
-    @extend %button;
-    @include button-style;
+    @include button;
   }
 
   //Gift message settings - closed by default and clicking "Gift Options" link opens Gift form with class _active.

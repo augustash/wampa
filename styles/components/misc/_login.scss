@@ -69,8 +69,7 @@
       }
 
       .primary a {
-        @extend %button;
-        @include button-style;
+        @include button();
       }
     }
   }
@@ -135,8 +134,7 @@
     }
 
     .action.back {
-      @extend %button;
-      @include button-style;
+      @include button;
     }
   }
 }
@@ -158,8 +156,7 @@
     }
 
     .action.back {
-      @extend %button;
-      @include button-style;
+      @include button;
     }
   }
 }

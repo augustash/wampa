@@ -16,6 +16,10 @@
 //////////////////
 //button base styles
 //////////////////
+
+/////////////////////
+// Base styles for any button type. @See button-style mixin for further styles.
+// ---------
 @mixin button-base {
   display: inline-block;
   font-size: rem-calc(16);
@@ -28,6 +32,7 @@
   background-color: $secondary-color;
   color: $white;
   border: 1px solid $secondary-color;
+  border-radius: $global-radius;
   padding: ($global-padding * 0.625) ($global-padding * 1.5625);
   margin: 0;
   cursor: pointer;
@@ -43,6 +48,8 @@
     background-color: darken($secondary-color, 10%);
     border-color: darken($secondary-color, 10%);
     color: $white;
+    cursor: pointer;
+    text-decoration: none;
   }
 }
 
