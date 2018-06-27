@@ -35,9 +35,11 @@ button,
 .action.checkout {
 
   &:disabled {
+    @include button($outline: true);
 
     &:hover {
       position: relative;
+      background-color: transparent;
       cursor: not-allowed;
 
       &:before {
