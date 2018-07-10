@@ -38,7 +38,7 @@
         padding: $global-padding / 4;
 
         &:hover {
-          background-color: rgba($blue-light, 0.5);
+          background-color: $grey-light;
         }
 
         strong {
@@ -97,14 +97,6 @@
           background-color: $grey-light;
         }
       }
-    }
-  }
-
-  // Account navigation sidebar
-  .account-nav {
-
-    .title {
-      font-size: $global-font-size * 1.3;
     }
   }
 }

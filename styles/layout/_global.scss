@@ -119,6 +119,7 @@ main {
     > .sidebar {
       @include grid-column(12);
       margin-top: $global-margin * 2;
+      margin-bottom: $global-margin * 2;
 
       @include breakpoint(medium) {
         @include grid-column(3);
