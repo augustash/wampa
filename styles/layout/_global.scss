@@ -182,6 +182,18 @@ main {
   }
 }
 
+// Adds additional margin-top for Account pages.
+.page-layout-2columns-left.account {
+
+  .page-main {
+    margin-top: $global-margin;
+
+    @include breakpoint(medium) {
+      margin-top: $global-margin * 2;
+    }
+  }
+}
+
 .catalog-product-view {
 
   .page-main {
