@@ -191,6 +191,28 @@
   &:after {
     clear: both;
   }
+
+  // Product Reviews Toolbar within My Account.
+  &.products-reviews-toolbar.bottom {
+    margin: ($global-margin * 2) auto;
+
+    .toolbar-amount {
+      position: initial;
+    }
+
+    .limiter {
+      display: block;
+      float: right;
+
+      > * {
+        display: inline-block;
+      }
+
+      select {
+        width: rem-calc(75);
+      }
+    }
+  }
 }
 
 // Hides the display modes, amounts and sort options and displays the pager and limiter in the footer toolbar 
