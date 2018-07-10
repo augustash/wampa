@@ -192,8 +192,8 @@
     clear: both;
   }
 
-  // Product Reviews Toolbar within My Account.
-  &.products-reviews-toolbar.bottom {
+  // Bottom Toolbar - product reviews and product orders within my account.
+  &.bottom {
     margin: ($global-margin * 2) auto;
 
     .toolbar-amount {
