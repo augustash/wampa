@@ -76,12 +76,14 @@
   }
 }
 
-// Order history table
-.orders-history {
+// Order history and recent orders tables.
+.orders-history,
+.orders-recent {
 
   table {
 
-    &.history.table-order-items {
+    &.history.table-order-items,
+    &.recent.table-order-items {
 
       tbody {
 
