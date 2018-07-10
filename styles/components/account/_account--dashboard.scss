@@ -11,15 +11,10 @@
       margin-left: 0;
       padding: $global-padding 0;
       padding-left: $global-padding;
-    }
-  }
-
-  .block-dashboard-addresses {
-
-    .block-title {
       position: relative;
 
-      > .action.edit {
+      // Align action links to the right.
+      > .action {
         position: absolute;
         right: $global-margin;
       }

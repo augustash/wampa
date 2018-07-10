@@ -92,6 +92,16 @@
             background-color: $grey-light;
           }
         }
+
+        .col.actions {
+
+          .action {
+
+            &:nth-child(odd) {
+              margin-right: $global-margin;
+            }
+          }
+        }
       }
     }
   }
