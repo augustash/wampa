@@ -1,4 +1,4 @@
-//Site alert messages
+// Site alert messages
 .page.messages {
   max-width: $global-width;
   margin: 0 auto;
@@ -6,29 +6,31 @@
   color: $white;
   clear: both;
 
-  .success {
-    background-color: map-get($foundation-palette, success);
+  .success,
+  .error,
+  .alert {
     padding: $global-padding;
     border-radius: $global-radius;
   }
 
+  .success {
+    background-color: map-get($foundation-palette, success);
+  }
+
   .error {
     background-color: map-get($foundation-palette, alert);
-    padding: $global-padding;
-    border-radius: $global-radius;
     color: $white;
   }
 
   .alert {
     background: map-get($foundation-palette, warning);
-    padding: $global-padding;
-    border-radius: $global-radius;
   }
 }
 
 // Global Alerts
 .global.message {
-  
+
+  // Demo store notice.
   &.demo {
     background-color: map-get($foundation-palette, alert);
     color: $white;
@@ -40,21 +42,22 @@
     }
   }
 
-  &.success {
-    background-color: map-get($foundation-palette, success);
+  &.success,
+  &.error,
+  &.alert {
     padding: $global-padding;
     border-radius: $global-radius;
+  }
+
+  &.success {
+    background-color: map-get($foundation-palette, success);
   }
 
   &.error {
     background-color: map-get($foundation-palette, alert);
-    padding: $global-padding;
-    border-radius: $global-radius;
   }
 
   &.alert {
     background: map-get($foundation-palette, warning);
-    padding: $global-padding;
-    border-radius: $global-radius;
   }
 }
