@@ -14,9 +14,12 @@
   .product-items {
     margin-left: 0;
 
-    li:not(:last-child) {
-      padding-bottom: $global-padding;
-      border-bottom: 1px solid rgba($secondary-color, 0.2);
+    li {
+      padding: $global-padding 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba($secondary-color, 0.2);
+      }
     }
 
     .product-item-info {
