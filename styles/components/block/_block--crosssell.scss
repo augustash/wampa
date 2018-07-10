@@ -1,0 +1,17 @@
+// Crosssell Products on cart page.
+.block.crosssell {
+  clear: both;
+  padding-top: $global-padding * 3;
+
+  .block-title {
+    margin-bottom: $global-margin * 2;
+
+    @include breakpoint(medium) {
+      margin-bottom: $global-margin;
+    }
+
+    span {
+      font-weight: $bold-font-weight;
+    }
+  }
+}
