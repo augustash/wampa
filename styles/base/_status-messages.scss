@@ -1,5 +1,7 @@
 //Site alert messages
 .page.messages {
+  max-width: $global-width;
+  margin: 0 auto;
   padding: $global-padding;
   color: $white;
   clear: both;
