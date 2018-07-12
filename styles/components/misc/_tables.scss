@@ -59,4 +59,18 @@ table {
       }
     }
   }
+
+  > tfoot {
+
+    > tr {
+
+      > td {
+
+        @include breakpoint(small only) {
+          display: block;
+          padding: ($global-padding / 2) ($global-padding);
+        }
+      }
+    }
+  }
 }
