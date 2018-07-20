@@ -159,12 +159,12 @@
       font-size: $global-padding;
       letter-spacing: normal;
       line-height: 2;
-      padding: 0 ($global-margin / 2);
       display: inline-block;
       transition: background-color 500ms ease, color 500ms ease;
 
       a {
         display: block;
+        padding: 0 ($global-margin / 2);
       }
 
       .label {
@@ -172,6 +172,7 @@
       }
 
       &.current {
+        padding: 0 ($global-margin / 2);
         background-color: $primary-color;
         color: $white;
       }
