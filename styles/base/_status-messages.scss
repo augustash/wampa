@@ -5,6 +5,8 @@
   padding: $global-padding;
   color: $white;
   clear: both;
+  position: relative;
+  z-index: 99;
 
   .success,
   .error,
