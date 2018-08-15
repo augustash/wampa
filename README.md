@@ -1,2 +1,4 @@
-# wampa
-Magento + Foundation + SASS + Gulp
+# Wampa - Magento 2 SASS Theme
+
+* SASS based Magento 2 Theme, based on SnowdogApps Blank Theme.
+* Utilizies Foundation, SASS and Gulp.
