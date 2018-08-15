@@ -1,13 +1,13 @@
 // Block Search from Header
 .block-search {
   float: right;
-  padding-left: 15px;
+  padding-left: $global-padding;
   position: relative;
-  width: 130px;
+  width: rem-calc(130);
   z-index: 4;
 
   @include breakpoint(medium) {
-    width: 250px;
+    width: rem-calc(250);
   }
 
   .block-title {

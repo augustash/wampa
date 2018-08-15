@@ -1,4 +1,4 @@
-//Autocomplete search results - set to drop over page content not push page content down
+// Autocomplete search results - set to drop over page content not push page content down.
 .searchautocomplete__autocomplete {
   position: absolute;
   background-color: $grey-light;
@@ -19,7 +19,7 @@
     }
   }
 
-  // Search results autocomplete hidden by default and shown when active and class "_active" is added
+  // Search results autocomplete hidden by default and shown when active and class "_active" is added.
   &._active {
     display: block;
   }

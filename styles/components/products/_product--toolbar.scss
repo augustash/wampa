@@ -39,10 +39,10 @@
       text-align: center;
       display: inline-block;
       text-decoration: none;
-      border-radius: 3px 0 0 3px;
+      border-radius: $global-radius 0 0 $global-radius;
 
       &:last-child {
-        border-radius: 0 3px 3px 0;
+        border-radius: 0 $global-radius $global-radius 0;
         border-right: 1px solid $grey;
       }
 

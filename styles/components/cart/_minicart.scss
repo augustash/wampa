@@ -109,7 +109,7 @@
     outline: none;
     transition: color 400ms ease;
 
-    //removes default CLOSE text
+    // removes default CLOSE text
     > span:first-child {
 
       @include visually-hidden;

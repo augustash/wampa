@@ -1,6 +1,6 @@
-//Product Action Icons - Edit or remove actions using icons in place of text links.
+// Product Action Icons - Edit or remove actions using icons in place of text links.
 
-//Edit and Remove Item buttons/links turned to icons.
+// Edit and Remove Item buttons/links turned to icons.
 // -delete and -edit are from main cart with .delete and .edit from minicart
 
 .product-item-actions,
@@ -24,11 +24,11 @@
     }
 
     span {
-      @include visually-hidden; //removes default edit and remove text block
+      @include visually-hidden; // removes default edit and remove text block
     }
   }
 
-  //edit item in cart icon
+  // edit item in cart icon
   .action.edit,
   .action-edit {
     @include icon($position: before, $icon-set: 'fontawesome', $icon: edit) {
@@ -36,7 +36,7 @@
     };
   }
 
-  //delete / remove item from cart icon
+  // delete / remove item from cart icon
   .action.delete,
   .action-delete {
     @include icon($position: before, $icon-set: 'fontawesome', $icon: delete) {
@@ -105,7 +105,7 @@
   }
 }
 
-//Add printer icon for "Print This Page" link
+// Add printer icon for "Print This Page" link
 .action.print {
   @include icon($position: before, $icon-set: 'fontawesome', $icon: print) {
     display: inline-block;
