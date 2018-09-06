@@ -58,16 +58,10 @@
 // Sales order print - remove the fake back button.
 .sales-order-print {
 
-  .order-actions-toolbar {
-
-    .actions {
-
-      a {
-        visibility: hidden;
-        opacity: 0;
-        height: 0;
-      }
-    }
+  .actions-toolbar {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
   }
 }
 
